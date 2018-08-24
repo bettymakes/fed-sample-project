@@ -3,3 +3,175 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  line-height: 1.8;
+}
+
+.brand {
+  color: #333;
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  flex: 1;
+  align-self: center;
+}
+
+.nav-menu {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  align-self: center;
+}
+
+.icon-menu {
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: #e8e806;
+  min-height: 60px;
+  padding: 10px 15px;
+}
+
+.nav-heading {
+  display: flex;
+}
+
+.nav-list {
+  display: none;
+  margin: 0;
+}
+
+.nav-list.show {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #e8e806;
+  padding: 0 15px 15px;
+}
+
+.nav-item {
+  line-height: 1.5;
+}
+
+.heading {
+  margin: 0 0 75px 0;
+}
+
+.intro {
+  background-image: url('../images/gude-wallpaper.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: calc(100vh - 60px);
+  position: relative;
+}
+
+.intro > .heading {
+  color: tomato;
+  -webkit-text-stroke: 3px #333;
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.2;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading > h2 {
+  margin: 0;
+}
+
+.main {
+  padding: 30px 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-gallery {
+  padding: 0 30px;
+}
+
+.about-gallery img {
+  width: 100%;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.paraphernalia-gallery {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.paraphernalia-gallery > img {
+  width: 100%;
+}
+
+.btn-gallery {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.fan-art-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.fan-art-gallery > figure {
+  border: 3px solid #333;
+  border-radius: 5px;
+  position: relative;
+}
+
+.fan-art-caption {
+  background-color: #333;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 0 15px;
+}
+
+.fan-art-img{
+  width: 100%;
+}
+
+@media screen and (min-width: 420px) {
+  .about-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .about-gallery {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

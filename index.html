@@ -9,64 +9,86 @@
     <title>Gudetama</title>
   </head>
   <body>
-    <nav>
-      <h1>Gudetama</h1>
+    <nav class="nav-bar">
+      <div class="nav-heading">
+        <h1 class="brand">Gudetama</h1>
 
-      <button>
-        <img src="images/icon-menu.svg" alt="menu">
-      </button>
+        <button class="nav-menu" id="btn-menu">
+          <img src="images/icon-menu.svg" alt="menu" class="icon-menu">
+        </button>
+      </div>
 
-      <ul>
-        <li>About</li>
-        <li>Paraphernalia</li>
-        <li>Fan art</li>
+      <ul class="nav-list" id="nav">
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#paraphernalia">Paraphernalia</a>
+        </li>
+        <li class="nav-item">
+          <a href="#fan-art">Fan art</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
-    <header>
-      <h2>The Gudetama Fan Club</h2>
-      <button>Scroll down</button>
+
+    <header class="intro">
+      <h2 class="heading">The Gudetama Fan Club</h2>
+      <button class="scroll" id="btn-scroll">Scroll down</button>
     </header>
-    <main>
-      <section>
+
+    <main class="main">
+      <section class="heading" id="about">
         <h2>About Gudetama</h2>
         <p>
           It’s hard to tell at a glance, but Gudetama is an egg yolk with a butt crack. It’s a fictional character of sorts, one with limbs but no fingers or toes. It has a mouth but no obvious teeth. It has thighs but no visible joints, a head but no neck. Its eyes look like sesame seeds. It has no gender.
         </p>
-        <div>
+        <div class="about-gallery">
           <div>
-            <img src="egg-five-min-static.jpg" alt="Gudetama five more minutes">
+            <img src="images/egg-five-min-static.jpg" alt="Gudetama five more minutes">
           </div>
           <div>
-            <img src="egg-let-me-go.jpg" alt="Gudetama let me go">
+            <img src="images/egg-let-me-go.jpg" alt="Gudetama let me go">
           </div>
           <div>
-            <img src="egg-meh.jpg" alt="Gudetama meh">
+            <img src="images/egg-meh.png" alt="Gudetama meh">
           </div>
         </div>
       </section>
-      <section>
+      <section class="heading" id="paraphernalia">
         <h2>Paraphernalia</h2>
         <p>
           To the naked eye, it could easily be mistaken for a golden bean, a kernel of corn, or an unappealing drop of honey. But Gudetama isn’t any of those — because that would make too much sense for a success story that, on its surface, shouldn’t make any sense at all.
         </p>
-        <div>
-          <img src="images/products-mug.jpg" alt="Gudetama mug">
-          <button class="prev"></button>
-          <button class="next"></button>
+        <div class="paraphernalia-gallery">
+          <img id="product-pic" src="images/products-mug.jpg" alt="Gudetama mug">
+          <button class="btn-gallery prev" id="btn-prev">Prev</button>
+          <button class="btn-gallery next" id="btn-next">Next</button>
         </div>
       </section>
-      <section>
+      <section class="heading" id="fan-art">
         <h2>Fan art</h2>
         <p>
           Gudetama is a relatively recent addition to the Sanrio universe — which, until recent memory, revolved around the tiny-eyed, red-hair-bow-wearing being known as Hello Kitty. It’s also the company’s most popular character in recent memory, even though its blob-like appearance is the antithesis of Sanrio’s historical emphasis on cuteness.
         </p>
-        <div>
-          <img src="images/art-01.jpg" alt="Gudetama fan art">
-          <img src="images/art-02.jpg" alt="Gudetama fan art">
-          <img src="images/art-04.jpg" alt="Gudetama fan art">
+        <div class="fan-art-gallery">
+          <figure>
+            <img src="images/art-01.jpg" alt="Gudetama fan art" class="fan-art-img">
+            <figcaption class="fan-art-caption">Cool art</figcaption>
+          </figure>
+          <figure>
+            <img src="images/art-02.jpg" alt="Gudetama fan art" class="fan-art-img">
+            <figcaption class="fan-art-caption">Fun drawing</figcaption>
+          </figure>
+          <figure>
+            <img src="images/art-04.jpg" alt="Gudetama fan art" class="fan-art-img">
+            <figcaption class="fan-art-caption">Yay</figcaption>
+          </figure>
         </div>
       </section>
-      <section>
+      <section class="heading" id="contact">
         <h2>Contact</h2>
         <form>
           <label for="email">Email</label>
