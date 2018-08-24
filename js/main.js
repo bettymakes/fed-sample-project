@@ -1,10 +1,12 @@
+const navBarHeight = 60;
+
 document.getElementById('btn-menu').addEventListener('click', function() {
   document.getElementById('nav').classList.toggle('show');
 });
 
 document.getElementById('btn-scroll').addEventListener('click', function(e) {
 
-  var aboutOffsetTop = document.getElementById('about').offsetTop;
+  var aboutOffsetTop = document.getElementById('about').offsetTop - 60;
   var scrollPosition = window.pageYOffset;
 
   var scrollFn = setInterval(function() {
@@ -40,7 +42,7 @@ var productPicIndex = 0;
 document.getElementById('btn-next').addEventListener('click', function() {
   var productPic = document.getElementById('product-pic');
   productPicIndex++;
-  
+
   if(productPicIndex >= productGalleryPics.length) {
     productPicIndex = 0;
   }

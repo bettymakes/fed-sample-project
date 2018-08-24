@@ -32,6 +32,10 @@ body {
   background-color: #e8e806;
   min-height: 60px;
   padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .nav-heading {
@@ -66,7 +70,7 @@ body {
   background-image: url('../images/gude-wallpaper.jpg');
   background-attachment: fixed;
   background-size: cover;
-  height: calc(100vh - 60px);
+  height: 100vh;
   position: relative;
 }
 
@@ -83,7 +87,7 @@ body {
 
 .scroll {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -159,6 +163,40 @@ body {
 
 .fan-art-img{
   width: 100%;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control > label{
+  text-transform: uppercase;
+  color: #777;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: block;
+}
+
+.form-control > input,
+.form-control > textarea {
+  width: 100%;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.footer > p {
+  margin: 0;
 }
 
 @media screen and (min-width: 420px) {
